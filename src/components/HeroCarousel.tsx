@@ -34,14 +34,14 @@ export default function HeroCarousel({ posts }: { posts: HeroPost[] }) {
 
   if (!posts || posts.length === 0) {
     return (
-      <div className="h-[80vh] bg-slate-900 flex items-center justify-center text-white">
+      <div className="h-[80vh] bg-slate-900 flex items-center justify-center text-white mt-[112px]">
         <h1 className="text-3xl font-bold">MINCOEX</h1>
       </div>
     );
   }
 
   return (
-    <div className="relative h-[85vh] w-full overflow-hidden bg-slate-900 group">
+    <div className="relative h-[85vh] w-full overflow-hidden bg-slate-900 group mt-[112px]">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={currentIndex}
