@@ -12,8 +12,10 @@ export default async function Home() {
   // Obtenemos hasta 10 noticias desde Ghost (4 para el Hero, 6 para la grilla)
   const allPosts = await getPosts(10);
   
-  // Dividimos: 4 para el Hero, el resto para la cuadrícula
+  // 1. Asignamos al Slider las 4 noticias más recientes (desde el índice 0 hasta el 3)
   const heroPosts = allPosts.slice(0, 4);
+  
+  // 2. Asignamos a la Grilla el resto de las noticias (desde el índice 4 en adelante)
   const gridPosts = allPosts.slice(4);
 
   return (
