@@ -47,7 +47,7 @@ export default function QuickActions() {
 
         {/* Tarjeta 4: VUCE */}
         <motion.a
-          href="http://www.vuce.gob.ve/"
+          href="http://registro-empresa.vuce.gob.ve/"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
